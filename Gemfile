@@ -4,6 +4,9 @@ ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
+gem 'bootstrap-sass'
+gem 'sprockets'
+gem 'bcrypt'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -22,6 +25,7 @@ end
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor', '0.0.2'
+	gem 'puma', '2.11.1'
 end
 
 # Use SCSS for stylesheets
